@@ -54,7 +54,27 @@ namespace Agenda.View
                 else
                 {
 
-                   
+                    var retorno = new Agenda.Core.Service.Service().LoginUsuario(txtLogin.Text, txtSenha.Text);
+
+                    if (retorno.idusuario != null)
+                    {
+
+
+                        if (retorno.idusuario > 0)
+                        {
+
+                            var frm = new FrmPrincipal();
+                            frm.Iniciar(retorno);
+                            frm.ShowDialog();
+
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login ou Senha Incorreto!", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
 
                 }
             }

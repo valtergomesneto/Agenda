@@ -73,6 +73,16 @@ namespace Agenda.View.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tela_fundo {
+            get {
+                object obj = ResourceManager.GetObject("tela_fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap telalogin {
             get {
                 object obj = ResourceManager.GetObject("telalogin", resourceCulture);

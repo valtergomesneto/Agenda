@@ -13,5 +13,16 @@ namespace Agenda.Entity
         public string login { get; set; }
         public string senha { get; set; }
         public int status { get; set; }
+        public int nivelAcesso { get; set; }
+
+    }
+
+    public enum Perfil
+    { 
+    
+        Administrador = 1,
+        Operador = 2,
+        Suporte = 3
+    
     }
 }
